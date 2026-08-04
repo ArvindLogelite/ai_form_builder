@@ -13,6 +13,8 @@ Route::apiResource('forms', FormController::class);
 
 Route::post('/forms/{slug}/submit', [FormSubmissionController::class, 'store']);
 
+Route::patch('/forms/{id}/status',[FormController::class, 'changeStatus']);
+
 Route::post('/ai/generate', [AIController::class, 'generate']);
 
 Route::post('/ai/edit', [AIController::class, 'edit']);

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreFormRequest;
 use App\Models\Form;
+use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
 class FormController extends Controller
@@ -68,5 +69,22 @@ class FormController extends Controller
             ->firstOrFail();
 
         return response()->json($form);
+    }
+
+    public function changeStatus(Request $request, $id)
+    {
+        $request->validate([
+            'status' => 'required|in:draft,published',
+        ]);
+        $form = Form::findOrFail($id);
+
+        $form->update([
+            'status' => $request->status,
+        ]);
+
+        return response()->json([
+            'message' => 'Status updated successfully.',
+            'status' => $form->status,
+        ]);
     }
 }
