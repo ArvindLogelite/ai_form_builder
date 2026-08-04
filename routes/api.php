@@ -24,3 +24,5 @@ Route::post('/import', [ImportController::class, 'import']);
 Route::get('/forms/{id}/submissions',[SubmissionController::class,'index']);
 
 Route::get('/forms/{id}/submissions/export',[SubmissionController::class,'export']);
+
+Route::post('/import/save', [ImportController::class, 'save']);
