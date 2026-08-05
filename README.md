@@ -26,6 +26,59 @@ The project is developed using Laravel 11, React.js, MySQL and Queue Jobs.
 
 ---
 
+## Why Separate Frontend & Backend?
+
+The project is divided into two independent repositories:
+
+### Backend (Laravel)
+
+Responsible for:
+
+- REST API development
+- Business logic
+- Form generation
+- AI job processing
+- Import parsing
+- Database operations
+- Submission management
+
+Repository:
+https://github.com/ArvindLogelite/ai_form_builder
+
+---
+
+### Frontend (React.js)
+
+Responsible for:
+
+- User Interface
+- Drag & Drop Form Builder
+- Form Preview
+- Dashboard
+- AI Generator UI
+- Import Preview
+- Public Form Rendering
+
+Repository:
+https://github.com/ArvindLogelite/ai_form_builder_front
+
+---
+
+### Why this architecture?
+
+The frontend and backend are intentionally separated to follow a modern client-server architecture.
+
+Benefits:
+
+- Clear separation of concerns.
+- Independent development and deployment.
+- Frontend can consume the API from any backend environment.
+- Backend APIs can be reused by web or mobile applications.
+- Easier maintenance and scalability.
+- Better team collaboration where frontend and backend developers can work independently.
+
+---
+
 # Features
 
 ## Part A – Form Builder

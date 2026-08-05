@@ -1,5 +1,24 @@
 # DECISIONS
 
+## Architecture Decision
+
+The application follows a decoupled architecture by separating the frontend and backend into two repositories.
+
+Reason:
+
+- Independent development
+- Better scalability
+- API-first design
+- Easier maintenance
+- Future mobile application support
+- Independent deployment of frontend and backend
+
+Trade-off:
+
+Managing two repositories introduces additional configuration such as CORS, API URLs and environment variables, but provides better long-term maintainability.
+
+---
+
 ## Assumptions
 
 - Forms remain in Draft mode until published.
