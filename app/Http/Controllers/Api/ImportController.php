@@ -42,6 +42,8 @@ class ImportController extends Controller
 
         $request->validate([
             'schema' => 'required|array',
+            'schema.title' => 'required|string',
+            'schema.sections' => 'required|array|min:1',
         ]);
 
         $schema = $request->schema;
