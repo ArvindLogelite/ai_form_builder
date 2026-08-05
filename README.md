@@ -15,6 +15,7 @@ https://github.com/ArvindLogelite/ai_form_builder_front
 Not deployed.
 
 Please clone both repositories and follow the setup instructions below to run the project locally.
+Please find the .env.example file for the db details and more
 
 ---
 
