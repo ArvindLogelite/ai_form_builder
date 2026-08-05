@@ -340,6 +340,11 @@ AI Generator
 
 Current implementation uses a rule-based schema generator.
 
+# example
+{
+  "prompt": "Job application with name email phone resume"
+}
+
 Future implementation will:
 
 - Generate fields
@@ -353,6 +358,9 @@ using an LLM.
 ---
 
 # Import Strategy
+
+pleasefind the docs sample file with name sample.docx
+
 
 Deterministic Parser
 
